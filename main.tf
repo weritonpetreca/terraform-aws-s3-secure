@@ -38,7 +38,7 @@ resource "aws_s3_bucket_server_side_encryption_configuration" "encryption" {
 resource "aws_s3_bucket_policy" "secure_transport" {
   bucket = aws_s3_bucket.this.id
 
-  policy = jsondecode({
+  policy = jsonencode({
     Version = "2012-10-17",
     Statement = [
       {
