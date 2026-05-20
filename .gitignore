@@ -1,0 +1,21 @@
+# --- IDEs & OS ---
+.idea/
+.vscode/
+*.iml
+.DS_Store
+Thumbs.db
+
+# Plugins and local directories from Terraform
+.terraform/
+.terraform.lock.hcl
+
+# State archives
+*.tfstate
+*.tfstate.*
+
+# Variable archives
+*.tfvars
+*.tfvars.json
+
+# Crash logs
+crash.log
